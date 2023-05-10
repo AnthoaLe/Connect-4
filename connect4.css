@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;      /* If the first font is unavailable, it will use the other listed fonts */
+    text-align: center;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+
+    background-color: blue;
+    border: 10px solid navy;
+    
+    margin: 0 auto;
+    display: flex;          /* flex attempts to fill in all the available space */
+    flex-wrap: wrap;        /* allows flex items to wrap onto another or multiple other lines */
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;            /* originally height and width were 90px, but with the inclusion of margin, you must minus 10px from both due to 2 x 5px (left, right, up, down) */
+
+
+    background-color: white;
+    border-radius: 50%;     /*  rounds the corners of an element's outer border edge */
+    border: 5px solid navy;     /* adding border, must minus 10px from height and width, same reasoning as margin */
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
